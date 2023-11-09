@@ -483,7 +483,6 @@ section {
   border: 1px solid var(--color-secondary);
   display: flex;
   align-self: flex-start;
-  display: flex;
   align-items: center;
   overflow: hidden;
 }
@@ -506,6 +505,9 @@ section {
   transform: translateX(100%);
   transition: all 0.4s ease-out;
   z-index: -1;
+}
+.main-btn:hover {
+  transition: all 0.4s ease-in-out;
 }
 .main-btn:hover::before {
   width: 100%;
