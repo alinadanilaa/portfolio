@@ -28,7 +28,7 @@
                 <div class="right-header">
                     <h1 class="name">
                         Hi, I'm <span> Alina Dănilă. </span>
-                        A web developer.
+                        Taking my first steps as a Web Developer.
                     </h1>
                     <p>I am a recent graduate in Systems Engineering from the Faculty of Automatic Control and Computer
                         Engineering. I have a strong passion for web development, particularly in the field of
@@ -57,11 +57,11 @@
                     <div class="left-about">
                         <h4>Information about me</h4>
                         <p>
-                            I am a recent graduate in Systems Engineering from the Faculty of
-                            Automatic Control and Computer Engineering. I have a strong passion
-                            for web development, particularly in the field of Front-End
-                            development. I am a reliable teammate, as well as efficient when
-                            working independently, and always open to challenges.
+                            I recently completed my studies in Systems Engineering at the Faculty of Automatic Control
+                            and Computer Engineering, where I discovered my interest in web development during the
+                            last semester. Since then, I have been actively enhancing my skills in HTML, CSS, SCSS, and
+                            JavaScript, with a focus on React. My dedication extends to continuous learning and
+                            improvement in these technologies
                         </p>
 
                     </div>
@@ -269,15 +269,12 @@
     <section class="section sec4 contact" id="contact">
         <div class="contact-container">
             <div class="main-title">
-                <h2>Contact <span>me</span> <span class="bg-text">my status</span></h2>
+                <h2>Contact <span>me</span> <span class="bg-text">Connect Here</span></h2>
             </div>
             <div class="contact-content-con">
                 <div class="left-contact">
                     <h4>Contact me here:</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, porro! Amet fugiat
-                        velit
-                        provident molestias itaque accusamus distinctio, ad facere!
-                    </p>
+                    <p> </p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <div class="icon">
@@ -324,20 +321,31 @@
                     <form method="POST"
                         action="https://script.google.com/macros/s/AKfycbwkUOdyknH_LqGkdvIs7qs_FPPy9FZsfRoUtQQHAzbPXed6lKms7ljQkrdn--hgBYuZ2g/exec"
                         class="contact-form" name="contact-form" id="myForm">
+
+                        <div class="message-form">
+                            <div class="success" id="success">
+                                Your Message Was Succesfully Sent!
+                            </div>
+                            <div class="danger" id="danger">
+                                Field cannot be Empty!
+                            </div>
+                        </div>
+
                         <div class="input-control i-c-2">
-                            <input type="text" name="name" required placeholder="Your Name">
-                            <input type="email" name="email" required placeholder="Your Email">
+                            <input type="text" name="name" id="name" required placeholder="Your Name">
+                            <input type="email" name="email" id="email" required placeholder="Your Email">
                         </div>
                         <div class="input-control">
-                            <input type="text" name="subject" required placeholder="Enter Subject">
+                            <input type="text" name="subject" id="subject" required placeholder="Enter Subject">
                         </div>
                         <div class="input-control">
-                            <textarea placeholder="Enter Message" name="message" id="" cols="15" rows="8"></textarea>
+                            <textarea placeholder="Enter Message" name="message" id="message" cols="15"
+                                rows="8"></textarea>
 
                         </div>
                         <div class="btn-con">
 
-                            <button type="submit" class="main-btn submit-btn">
+                            <button type="submit" onclick="formMessage()" class="main-btn submit-btn">
 
                                 <span class="btn-text">Submit</span>
                                 <span class="btn-icon"><i class="fas fa-envelope"></i></span>
@@ -365,6 +373,7 @@
 
 
     <script src="app.js"></script>
+    <script src="formMessage.js"></script>
     <script src="sheet.js"></script>
 </body>
 
