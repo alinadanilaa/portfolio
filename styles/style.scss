@@ -632,7 +632,41 @@ section {
 .btn-con {
     display: flex;
     align-self: flex-start;
+
+    button {
+        display: flex;
+        align-items: center;
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 1.1rem;
+        justify-content: center;
+        // width: 50px;
+        // height: 50px;
+        // border-radius: 50%;
+        margin: 0 .4rem;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-secondary);
+
+            i {
+                color: var(--color-white);
+            }
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+    }
+
 }
+
+
 
 .main-btn {
     border-radius: 30px;

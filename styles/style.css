@@ -548,6 +548,30 @@ section {
   display: flex;
   align-self: flex-start;
 }
+.btn-con button {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.1rem;
+  justify-content: center;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.btn-con button:hover {
+  background-color: var(--color-secondary);
+}
+.btn-con button:hover i {
+  color: var(--color-white);
+}
+.btn-con button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
 
 .main-btn {
   border-radius: 30px;
